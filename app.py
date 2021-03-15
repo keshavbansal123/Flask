@@ -58,47 +58,7 @@ def result():
 def home_page():
     return render_template ('home_page.html')
     
-    
-'''    return """
-    <!doctype html>
-    <body>
-    <center>
-    <style>
-    *{
-      box-sizing: border-box;
-     }
-        input[type=text], select, textarea 
-        {
-          width: 100%;
-          padding: 12px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          resize: vertical;
-         }
-    <h3>Enter Details to Get Data</h3>
-    <form action="/result">
-    <label for ="token">Enter token to authenticate:</label>
-    <input type ="text" id="token" name="token"><br>
-    <label for ="start_id">Enter Start iD:</label>
-    <input type="text" id="start_id" name="start_id"><br>
-    <label for ="end_id">Enter End ID:</label>
-    <input type="text" id="end_id" name="end_id"><br>
-    <label for ="type_"> Select the Type of required data:</label>
-    <select name="type_" id="type_">
-        <option value="Posts">Posts</option>
-        <option value="Comments">comments</option>
-        <option value="Albums">Albums</option>
-        <option value="Photos">photos</option>
-        <option value="Todos">todos</option>
-        <option value="Users">users</option>
-        </select><br><br>
-    <button type="submit">Submit</button>
-    </form>
-    </center>
-    </body>
-    </html>
-    """
- '''   
+
 if __name__=='__main__':
         app.run(debug=True)
         
